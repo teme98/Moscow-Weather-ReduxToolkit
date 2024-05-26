@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchWeather } from "./ApiSlice";
 
-// let cancelAxios = null;
+
 function App() {
   // Redux
   const isLoading = useSelector((state) => {
@@ -129,7 +129,7 @@ function App() {
                   <Typography variant="h1" style={{ marginLeft: "10px" }}>
                     {temp.responseTemp}
                   </Typography>
-                  {/* TODO: TEMP IMAGE */}
+                  {/* TEMP IMAGE */}
                   <img src={temp.iconTemp} alt="img" />
                 </div>
                 {/*== TEMP ==*/}
